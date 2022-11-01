@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('userdata', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string("name");
+            $table->string("face");
+            $table->string("gender");
+            $table->integer("age");
+            $table->string("address");
+            $table->string("phone");
             $table->timestamps();
         });
     }
@@ -31,8 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('userdata');
     }
 };
-
-// this was created by me Daniel - 2401955360 and i spread this comment everywhere

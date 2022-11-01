@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+// this was created by me Daniel - 2401955360 and i spread this comment everywhere
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
